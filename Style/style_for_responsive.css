@@ -1,0 +1,122 @@
+@media (max-width: 1094px)
+{
+    .container .navigation
+    {
+        left:-300px;       
+    }  
+    .container .navigation.active 
+    {
+        left:0;
+        width:220px;    
+    }
+    .container .main
+    {
+        width:100%;
+        left:0;
+    }
+    .container .main.active 
+    {
+        width:calc(100% - 220px);
+        left:220px;
+    }
+    .container .main .details
+    {
+        grid-gap:10px;
+    }
+    .container .main .cardBox
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 990px)
+{
+    .container .main.active 
+    {
+        width:calc(100% - 250px);
+        left:250px;
+    }
+    .container .navigation.active
+    {
+        width:250px;
+    }
+    .container .main .details
+    {
+        grid-template-columns:repeat(1,1fr);        
+    }
+    .container .main .details .recentOrders
+    {
+        display:grid;
+    }
+    .container .main .details .recentOrders table tbody tr td:last-child
+    {
+        text-align: center;
+    }
+    .container .main .topBar .search
+    {
+        width:300px;
+    }
+}
+@media (max-width : 796px)
+{
+    .container .navigation
+    {
+        left:-220px;       
+    }  
+    .container .navigation.active 
+    {
+        left:0;
+        width:220px;    
+    }
+    .container .main
+    {
+        width:100%;
+        left:0;
+    }
+    .container .main.active 
+    {
+        width:calc(100% - 220px);
+        left:220px;
+    }        
+}
+@media(max-width:480px)
+{
+    .container .main .cardBox
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container .main .details .recentOrders
+    {
+        overflow-x:auto;
+    }
+    .container .main .details .recentOrders table
+    {
+        width:600px;
+    }
+    .container
+    {
+        width:100%;
+    }
+    .container .navigation.active
+    {
+        width:100%;
+        left:0;
+    }
+    .container .navigation
+    {
+        width:100%;
+        left:-100%;
+        z-index:1000;
+    }
+    .container .main .topBar .search
+    {
+        width:230px;
+    }
+    .toggle.active
+    {        
+        position: absolute;
+        z-index:1000;
+        color:#fff;
+    }
+
+
+}

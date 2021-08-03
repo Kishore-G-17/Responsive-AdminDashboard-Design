@@ -1,0 +1,35 @@
+.container .main .cardBox
+{
+    position:relative;
+    width:100%;
+    padding:20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:20px;
+}
+.container .main .cardBox .card
+{   
+    position:relative;
+    background:#fff;
+    display:flex;
+    padding:20px;
+    justify-content: space-between;
+    align-items: center;
+    cursor:pointer;
+    transition:all .5s linear;
+}
+.container .main .cardBox .card:hover
+{
+    background:#003147;
+    color:#fff;
+}
+.container .main .cardBox .card .image .fa 
+{
+    color:#03a9f4;
+    font-size: 2em;
+}
+.container .main .cardBox .card .content h4
+{
+    font-weight: 300;
+    font-family: "Poppins",sans-serif;
+}
